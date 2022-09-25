@@ -1,0 +1,146 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "total recall",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "MemoryTestIntent",
+          "slots": [
+            {
+              "name": "user_response",
+              "type": "yesorno"
+            }
+          ],
+          "samples": [
+            "{user_response}"
+          ]
+        },
+        {
+          "name": "ChoiceIntent",
+          "slots": [
+            {
+              "name": "user_choice",
+              "type": "decade_slot"
+            }
+          ],
+          "samples": [
+            "{user_choice}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "rockon"
+              }
+            },
+            {
+              "name": {
+                "value": "rock on"
+              }
+            },
+            {
+              "name": {
+                "value": "no"
+              }
+            },
+            {
+              "name": {
+                "value": "yes"
+              }
+            }
+          ],
+          "name": "yesorno"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "90"
+              }
+            },
+            {
+              "name": {
+                "value": "80"
+              }
+            },
+            {
+              "name": {
+                "value": "70"
+              }
+            },
+            {
+              "name": {
+                "value": "60"
+              }
+            },
+            {
+              "name": {
+                "value": "nineties"
+              }
+            },
+            {
+              "name": {
+                "value": "eighties"
+              }
+            },
+            {
+              "name": {
+                "value": "seventies"
+              }
+            },
+            {
+              "name": {
+                "value": "90s"
+              }
+            },
+            {
+              "name": {
+                "value": "80s"
+              }
+            },
+            {
+              "name": {
+                "value": "70s"
+              }
+            },
+            {
+              "name": {
+                "value": "60s"
+              }
+            },
+            {
+              "name": {
+                "value": "sixties"
+              }
+            }
+          ],
+          "name": "decade_slot"
+        }
+      ]
+    }
+  },
+  "version": "10"
+}
